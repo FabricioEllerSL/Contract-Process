@@ -40,7 +40,17 @@ public class Contract {
         this.value = value;
     }
 
-    
+    public List<Installment> getInstallments() {
+        return installments;
+    }
 
+    public void addInstallment(Installment installment) {
+        this.installments.add(installment);
+    }
+
+    @Override
+    public String toString(){
+        return "Number: " + this.number + ", " + "installments: " + this.installments;
+    }
     
 }
