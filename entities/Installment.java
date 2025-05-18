@@ -27,4 +27,9 @@ public class Installment {
         this.amount = amount;
     }
 
+    @Override
+    public String toString(){
+        return "Due Date: " + this.dueDate + " | " + " Amount: " + this.amount;
+    } 
+
 }
